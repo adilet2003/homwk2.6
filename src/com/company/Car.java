@@ -1,9 +1,23 @@
 package com.company;
 
-public class Car <C , T extends Number > implements Printble {
+public class Car <C , T extends Number > implements Playable {
     C year ;
     T Namber;
 
+
+    public Car(C year, T namber) {
+        this.year = year;
+        Namber = namber;
+    }
+
+
+    public C getYear() {
+        return year;
+    }
+
+    public void setYear(C year) {
+        this.year = year;
+    }
 
     public T getNamber() {
         return Namber;
@@ -13,24 +27,15 @@ public class Car <C , T extends Number > implements Printble {
         Namber = namber;
     }
 
-    public Car(T namber, double v) {
-        Namber = namber;
-    }
 
-    public C getCulor() {
-        return year;
-    }
 
-    public void setCulor(C year) {
-        this.year = year;
-    }
+    @Override
+    public void print(Number number) {
 
-    public Car(C year) {
-        this.year = year;
     }
 
     @Override
-    public void Print(Car car) {
-
+    public Number playSong() {
+        return null;
     }
 }
