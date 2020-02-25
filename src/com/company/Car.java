@@ -1,6 +1,6 @@
 package com.company;
 
-public class Car <C , T extends Number > implements Playable {
+public class Car <C extends Number , T extends Number > implements Playable {
     C year ;
     T Namber;
 
@@ -31,6 +31,7 @@ public class Car <C , T extends Number > implements Playable {
 
     @Override
     public void print(Number number) {
+        System.out.println( "музыка играет" );
 
     }
 

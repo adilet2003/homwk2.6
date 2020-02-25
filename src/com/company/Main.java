@@ -3,9 +3,9 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        Car<Double , Integer > car= new Car<Double, Integer>(10.1,11);
-        Playable p = new Car(12,2);
-        System.out.println(car.year);
+        Car<Integer ,Integer> car = new Car<Integer, Integer>(10,2);
+        car.print(10);
+        System.out.println ( "в нутри " + car.getClass().getSimpleName());
 
 
     }
